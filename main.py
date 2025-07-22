@@ -6,8 +6,8 @@ from datetime import datetime
 app = Flask(__name__)
 
 # Usa la variable de entorno DATABASE_URL para mayor seguridad
-DATABASE_URL = os.environ.get("DATABASE_URL") or "postgresql://postgres:Ez7c!AE.wwiX?UN@db.lonzpyfnlspxlmjmzsbw.supabase.co:5432/postgres
-"
+DATABASE_URL = os.environ.get("DATABASE_URL") or "postgresql://postgres:Ez7c!AE.wwiX?UN@db.lonzpyfnlspxlmjmzsbw.supabase.co:5432/postgres"
+
 
 def get_conn():
     return psycopg2.connect(DATABASE_URL, sslmode='require')
